@@ -20,6 +20,29 @@ Missing Data Handling: We identified and accounted for missing values in feature
 
 The EDA was applied to all features in the dataset, ensuring a comprehensive understanding of the data before proceeding to the preprocessing stage.
 
+## Preprocessing
+
+Dealing with Outliers, Missing Values, and Duplicates
+1. Outliers
+We identified outliers in the numeric columns (age, trestbps, chol, thalch, oldpeak) using boxplots. Outliers were retained as they provided valuable information, except for a single erroneous row with trestbps equal to 0, which was removed.
+
+2. Handling Missing Values
+We applied an imputation strategy based on column types:
+
+Categorical Columns: Used a Random Forest classifier to impute missing values.
+Numeric Columns: Used a Random Forest regressor to impute missing values.
+Accuracy scores and error metrics were calculated for imputed values, ensuring the process's reliability.
+
+3. Renaming Columns
+Column names were standardized for consistency:
+Spaces were removed.
+Boolean values were encoded.
+Target variable was simplified to binary (0: No disease, 1: Disease).
+
+4. Feature Engineering
+New dataset was generated with essential features.
+Some variables (e.g., num) were recoded, and binary encodings were applied to features like sex, fbs, and exang.
+
 ## Key Findings
 
 - **XGBoost**: Achieved the highest test accuracy of 86.96%, demonstrating strong predictive power and generalizability.
