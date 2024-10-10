@@ -43,6 +43,10 @@ Target variable was simplified to binary (0: No disease, 1: Disease).
 New dataset was generated with essential features.
 Some variables (e.g., num) were recoded, and binary encodings were applied to features like sex, fbs, and exang.
 
+Where the final correlation matrix between features is as follow.
+![image](https://github.com/user-attachments/assets/584255f1-cbef-4cbf-93a3-0472a761c8a6)
+
+
 ## Key Findings
 
 - **XGBoost**: Achieved the highest test accuracy of 86.96%, demonstrating strong predictive power and generalizability.
