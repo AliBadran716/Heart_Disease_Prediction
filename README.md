@@ -4,6 +4,22 @@
 
 This project aims to predict the presence of heart disease using the Cleveland heart disease dataset. By leveraging various machine learning algorithms, we developed models to assist healthcare professionals in making informed diagnostic decisions. The project evaluates the performance of multiple algorithms and explores potential enhancements for future work.
 
+## EDA
+
+Exploratory Data Analysis (EDA)
+In this project, we performed an Exploratory Data Analysis (EDA) to understand the structure and distribution of the dataset. The key steps in the EDA included:
+
+Descriptive Statistics: We used methods such as .describe() and .info() to summarize the dataset's characteristics, including data types, missing values, and statistical measures (mean, median, mode, etc.).
+
+Visualization: Several visualizations were created to explore data distributions and relationships between features:
+- Histograms for numerical features like age.
+- Pie charts and count plots for categorical features like sex and dataset location.
+- Correlation matrix to identify potential relationships between numerical variables.
+  
+Missing Data Handling: We identified and accounted for missing values in features like trestbps, chol, slope, and ca.
+
+The EDA was applied to all features in the dataset, ensuring a comprehensive understanding of the data before proceeding to the preprocessing stage.
+
 ## Key Findings
 
 - **XGBoost**: Achieved the highest test accuracy of 86.96%, demonstrating strong predictive power and generalizability.
